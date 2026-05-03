@@ -1,10 +1,11 @@
 {
-  "name": "joshua-sensenig-qa-playwright-demo",
-  "version": "1.0.0",
-  "description": "Small Playwright demo for SauceDemo login and cart flow.",
+  "name": "qa-playwright-saucedemo-demo",
+  "version": "1.1.0",
+  "description": "Playwright automation demo for SauceDemo covering valid login, cart flow, checkout, and invalid login validation.",
   "scripts": {
     "test": "playwright test",
     "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
     "report": "playwright show-report"
   },
   "devDependencies": {
