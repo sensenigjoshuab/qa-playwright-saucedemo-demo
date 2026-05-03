@@ -1,8 +1,9 @@
-# QA Playwright SauceDemo Demo
-
 ![Playwright Tests](https://github.com/sensenigjoshuab/qa-playwright-saucedemo-demo/actions/workflows/playwright.yml/badge.svg)
 
+# QA Playwright SauceDemo Demo
+
 Playwright automation demo for SauceDemo covering valid login, cart behavior, checkout completion, and invalid login validation.
+
 
 ## Project purpose
 
