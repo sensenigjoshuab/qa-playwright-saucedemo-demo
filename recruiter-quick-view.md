@@ -18,14 +18,14 @@ It is not presented as paid QA employment, production QA ownership, or professio
 
 ## What This Portfolio Proves
 
-| Recruiter Question                                       | Evidence                                                                                                                                                  |
-| -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Can this candidate execute manual QA test cases?         | Yes — manual test cases cover login, cart, checkout, order completion, invalid login, locked-out login, checkout validation, and defect-validation flows. |
-| Can this candidate document bugs clearly?                | Yes — three observed SauceDemo defects are documented using GitHub Issues.                                                                                |
-| Can this candidate explain expected vs. actual behavior? | Yes — bug reports include steps, expected result, actual result, severity, and impact.                                                                    |
-| Can this candidate use basic QA tools?                   | Yes — evidence includes GitHub Issues, Chrome testing, Playwright test output, and GitHub Actions CI.                                                     |
-| Can this candidate learn automation basics?              | Yes — Playwright tests use JavaScript, Page Object Model structure, negative validation tests, and CI execution.                                          |
-| Is the candidate honest about experience level?          | Yes — the portfolio clearly identifies the work as self-directed QA practice.                                                                             |
+| Recruiter Question                                       | Evidence                                                                                                                                                                                         |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Can this candidate execute manual QA test cases?         | Yes — manual test cases cover login, cart, checkout, order completion, invalid login, locked-out login, checkout validation, visual validation, pricing validation, and defect-validation flows. |
+| Can this candidate document bugs clearly?                | Yes — three observed SauceDemo defects are documented using GitHub Issues.                                                                                                                       |
+| Can this candidate explain expected vs. actual behavior? | Yes — bug reports include steps, expected result, actual result, severity, and impact.                                                                                                           |
+| Can this candidate use basic QA tools?                   | Yes — evidence includes GitHub Issues, Chrome testing, Playwright test output, and GitHub Actions CI.                                                                                            |
+| Can this candidate learn automation basics?              | Yes — Playwright tests use JavaScript, stable selectors, Page Object Model structure, positive flow validation, negative login validation, and CI execution.                                     |
+| Is the candidate honest about experience level?          | Yes — the portfolio clearly identifies the work as self-directed QA practice.                                                                                                                    |
 
 ---
 
@@ -57,15 +57,16 @@ It is not presented as paid QA employment, production QA ownership, or professio
 
 ## Automation Evidence
 
-| Area         | Evidence                                                                                                           |
-| ------------ | ------------------------------------------------------------------------------------------------------------------ |
-| Framework    | Playwright                                                                                                         |
-| Language     | JavaScript                                                                                                         |
-| Structure    | Procedural tests + Page Object Model tests + negative validation tests                                             |
-| Coverage     | Login, invalid login, locked-out login, cart behavior, checkout completion, and checkout required-field validation |
-| Test count   | 12 Playwright tests across three spec files                                                                        |
-| CI result    | GitHub Actions workflow configured for push, pull request, and manual runs                                         |
-| Public proof | GitHub repository, README badge, test files, page objects, and workflow file                                       |
+| Area         | Evidence                                                                                                            |
+| ------------ | ------------------------------------------------------------------------------------------------------------------- |
+| Framework    | Playwright                                                                                                          |
+| Language     | JavaScript                                                                                                          |
+| Structure    | Procedural tests + Page Object Model tests                                                                          |
+| Selectors    | Uses stable `data-test` selectors in Page Object Model files                                                        |
+| Coverage     | Valid login, invalid login, cart behavior, cart verification, checkout overview validation, and checkout completion |
+| Test count   | 8 Playwright tests across two spec files                                                                            |
+| CI result    | GitHub Actions workflow configured for push, pull request, and manual runs                                          |
+| Public proof | GitHub repository, README badge, test files, page objects, Playwright config, and workflow file                     |
 
 ---
 
@@ -98,3 +99,5 @@ It is not presented as paid QA employment, production QA ownership, or professio
 ## Hiring Summary
 
 This portfolio is strongest for entry-level QA roles that value manual testing, functional testing, regression checks, UAT-style validation, written defect documentation, ticket-based workflows, traceability, QA planning, and basic automation exposure.
+
+It shows the ability to document test cases, report defects clearly, connect requirements to testing evidence, use GitHub Issues, understand basic accessibility and API-testing concepts, and create beginner-level Playwright automation with GitHub Actions CI.
