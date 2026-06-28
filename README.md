@@ -30,27 +30,27 @@ This project is not presented as paid QA employment, production QA ownership, or
 
 
 
-\- Manual functional testing
+\* Manual functional testing
 
-\- Positive and negative test scenarios
+\* Positive and negative test scenarios
 
-\- Login, cart, checkout, and order-completion validation
+\* Login, cart, checkout, and order-completion validation
 
-\- Clear expected vs. actual result documentation
+\* Clear expected vs. actual result documentation
 
-\- Bug reporting through GitHub Issues
+\* Bug reporting through GitHub Issues
 
-\- Requirements traceability
+\* Requirements traceability
 
-\- Basic accessibility-awareness observations
+\* Basic accessibility-awareness observations
 
-\- Basic API-testing concept awareness
+\* Basic API-testing concept awareness
 
-\- Playwright automation using JavaScript
+\* Playwright automation using JavaScript
 
-\- Page Object Model structure
+\* Page Object Model structure
 
-\- GitHub Actions CI test execution
+\* GitHub Actions CI test execution
 
 
 
@@ -62,25 +62,27 @@ This project is not presented as paid QA employment, production QA ownership, or
 
 
 
-| Area | Manual Coverage | Automation Coverage | Status |
+| Area                          | Manual Coverage | Automation Coverage | Status            |
 
-|---|---:|---:|---|
+| ----------------------------- | --------------: | ------------------: | ----------------- |
 
-| Valid login | Yes | Yes | Passing |
+| Valid login                   |             Yes |                 Yes | Passing           |
 
-| Invalid login | Yes | Yes | Passing |
+| Invalid login                 |             Yes |                 Yes | Passing           |
 
-| Add to cart | Yes | Yes | Passing |
+| Add to cart                   |             Yes |                 Yes | Passing           |
 
-| Cart verification | Yes | Yes | Passing |
+| Cart verification             |             Yes |                 Yes | Passing           |
 
-| Checkout overview | Yes | Partial | Passing |
+| Checkout overview             |             Yes |             Partial | Passing           |
 
-| Checkout completion | Yes | Yes | Passing |
+| Checkout completion           |             Yes |                 Yes | Passing           |
 
-| Product image validation | Yes | No | Documented defect |
+| Product image validation      |             Yes |                  No | Documented defect |
 
-| Product price validation | Yes | No | Documented defect |
+| Product price validation      |             Yes |                  No | Documented defect |
+
+| Checkout Last Name validation |             Yes |                  No | Documented defect |
 
 
 
@@ -92,23 +94,23 @@ This project is not presented as paid QA employment, production QA ownership, or
 
 
 
-| Area | Details |
+| Area            | Details                                    |
 
-|---|---|
+| --------------- | ------------------------------------------ |
 
-| Framework | Playwright |
+| Framework       | Playwright                                 |
 
-| Language | JavaScript |
+| Language        | JavaScript                                 |
 
-| Test runner | Playwright Test |
+| Test runner     | Playwright Test                            |
 
-| Structure | Procedural tests + Page Object Model tests |
+| Structure       | Procedural tests + Page Object Model tests |
 
-| CI | GitHub Actions |
+| CI              | GitHub Actions                             |
 
-| Browser install | Playwright browser setup in CI |
+| Browser install | Playwright browser setup in CI             |
 
-| Reporting | Playwright HTML/list reporter |
+| Reporting       | Playwright HTML/list reporter              |
 
 
 
@@ -120,27 +122,27 @@ This project is not presented as paid QA employment, production QA ownership, or
 
 
 
-| File / Folder | Purpose |
+| File / Folder                      | Purpose                                                  |
 
-|---|---|
+| ---------------------------------- | -------------------------------------------------------- |
 
-| `tests/saucedemo.spec.js` | Basic Playwright tests written directly in the spec file |
+| `tests/saucedemo.spec.js`          | Basic Playwright tests written directly in the spec file |
 
-| `tests/saucedemo-pom.spec.js` | Playwright tests using Page Object Model structure |
+| `tests/saucedemo-pom.spec.js`      | Playwright tests using Page Object Model structure       |
 
-| `pages/` | Page Object Model classes |
+| `pages/`                           | Page Object Model classes                                |
 
-| `manual-test-cases.md` | Manual QA test cases and execution results |
+| `manual-test-cases.md`             | Manual QA test cases and execution results               |
 
-| `requirements-traceability.md` | Requirement-to-test coverage mapping |
+| `requirements-traceability.md`     | Requirement-to-test coverage mapping                     |
 
-| `accessibility-observations.md` | Basic accessibility-awareness checklist |
+| `accessibility-observations.md`    | Basic accessibility-awareness checklist                  |
 
-| `api-testing-observations.md` | Basic API-testing concept notes |
+| `api-testing-observations.md`      | Basic API-testing concept notes                          |
 
-| `recruiter-quick-view.md` | Fast summary for recruiters and hiring managers |
+| `recruiter-quick-view.md`          | Fast summary for recruiters and hiring managers          |
 
-| `.github/workflows/playwright.yml` | GitHub Actions CI workflow |
+| `.github/workflows/playwright.yml` | GitHub Actions CI workflow                               |
 
 
 
@@ -159,4 +161,66 @@ npm install
 npx playwright install
 
 npm test
+
+```
+
+
+
+Run headed mode:
+
+
+
+```bash
+
+npm run test:headed
+
+```
+
+
+
+Open the Playwright report:
+
+
+
+```bash
+
+npm run report
+
+```
+
+
+
+\---
+
+
+
+\## Best-Fit Role Signal
+
+
+
+This project is strongest for:
+
+
+
+\* Manual QA Tester
+
+\* QA Analyst
+
+\* Functional Tester
+
+\* UAT Tester
+
+\* Software Tester
+
+\* Junior QA Tester
+
+\* Junior Hybrid QA Tester
+
+\* QA Support Analyst
+
+
+
+It shows that I can document test cases, execute functional flows, report defects clearly, use GitHub Issues, understand basic traceability, and build beginner-level Playwright automation.
+
+
 
