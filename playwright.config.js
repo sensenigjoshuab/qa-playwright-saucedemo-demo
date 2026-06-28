@@ -9,6 +9,7 @@ module.exports = defineConfig({
   reporter: process.env.CI ? [['html'], ['list']] : [['list']],
   use: {
     baseURL: 'https://www.saucedemo.com/',
+    ...(process.env.CI ? { channel: 'chrome' } : {}),
     trace: 'on-first-retry',
     screenshot: 'only-on-failure'
   }
