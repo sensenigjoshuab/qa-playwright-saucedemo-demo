@@ -14,96 +14,96 @@ This project is not presented as paid QA employment, production QA ownership, or
 
 ## What This Project Demonstrates
 
-* Manual functional testing
-* Positive and negative test scenarios
-* Login, locked-out login, cart, checkout, validation, and order-completion testing
-* Clear expected vs. actual result documentation
-* Bug reporting through GitHub Issues
-* Requirements traceability
-* QA test planning
-* Defect summary documentation
-* Basic accessibility-awareness observations
-* Basic API-testing concept awareness
-* Playwright automation using JavaScript
-* Page Object Model structure
-* GitHub Actions CI test execution
+- Manual functional testing
+- Positive and negative test scenarios
+- Login, locked-out login, cart, checkout, validation, and order-completion testing
+- Clear expected vs. actual result documentation
+- Bug reporting through GitHub Issues
+- Requirements traceability
+- QA test planning
+- Defect summary documentation
+- Basic accessibility-awareness observations
+- Basic API-testing concept awareness
+- Playwright automation using JavaScript
+- Page Object Model structure
+- GitHub Actions CI test execution
 
 ---
 
 ## Application Under Test
 
-| Field                 | Details                                               |
-| --------------------- | ----------------------------------------------------- |
-| Application           | SauceDemo                                             |
-| URL                   | https://www.saucedemo.com/                            |
-| Application Type      | Public demo e-commerce web application                |
+| Field | Details |
+|---|---|
+| Application | SauceDemo |
+| URL | https://www.saucedemo.com/ |
+| Application Type | Public demo e-commerce web application |
 | Primary Testing Focus | Manual functional QA with beginner automation support |
-| Automation Tool       | Playwright                                            |
-| Automation Language   | JavaScript                                            |
-| CI Tool               | GitHub Actions                                        |
+| Automation Tool | Playwright |
+| Automation Language | JavaScript |
+| CI Tool | GitHub Actions |
 
 ---
 
 ## Test Coverage Summary
 
-| Area                                 | Manual Coverage | Automation Coverage | Status            |
-| ------------------------------------ | --------------: | ------------------: | ----------------- |
-| Valid login                          |             Yes |                 Yes | Passing           |
-| Invalid login                        |             Yes |                 Yes | Passing           |
-| Locked-out login                     |             Yes |                 Yes | Passing           |
-| Add to cart                          |             Yes |                 Yes | Passing           |
-| Cart verification                    |             Yes |                 Yes | Passing           |
-| Checkout overview                    |             Yes |             Partial | Passing           |
-| Checkout completion                  |             Yes |                 Yes | Passing           |
-| Checkout First Name validation       |             Yes |                 Yes | Passing           |
-| Checkout Last Name validation        |             Yes |                 Yes | Passing           |
-| Checkout Postal Code validation      |             Yes |                 Yes | Passing           |
-| Product image validation             |             Yes |                  No | Documented defect |
-| Product price validation             |             Yes |                  No | Documented defect |
-| `problem_user` checkout input defect |             Yes |                  No | Documented defect |
+| Area | Manual Coverage | Automation Coverage | Status |
+|---|---:|---:|---|
+| Valid login | Yes | Yes | Passing |
+| Invalid login | Yes | Yes | Passing |
+| Locked-out login | Yes | Yes | Passing |
+| Add to cart | Yes | Yes | Passing |
+| Cart verification | Yes | Yes | Passing |
+| Checkout overview | Yes | Partial | Passing |
+| Checkout completion | Yes | Yes | Passing |
+| Checkout First Name validation | Yes | Yes | Passing |
+| Checkout Last Name validation | Yes | Yes | Passing |
+| Checkout Postal Code validation | Yes | Yes | Passing |
+| Product image validation | Yes | No | Documented defect |
+| Product price validation | Yes | No | Documented defect |
+| `problem_user` checkout input defect | Yes | No | Documented defect |
 
 ---
 
 ## Automation Structure
 
-| Area        | Details                                                                |
-| ----------- | ---------------------------------------------------------------------- |
-| Framework   | Playwright                                                             |
-| Language    | JavaScript                                                             |
-| Test Runner | Playwright Test                                                        |
-| Structure   | Procedural tests + Page Object Model tests + validation/negative tests |
-| Test Count  | 12 Playwright tests across 3 spec files                                |
-| CI          | GitHub Actions                                                         |
-| Reporting   | Playwright HTML/list reporter                                          |
+| Area | Details |
+|---|---|
+| Framework | Playwright |
+| Language | JavaScript |
+| Test Runner | Playwright Test |
+| Structure | Procedural tests + Page Object Model tests + validation/negative tests |
+| Test Count | 12 Playwright tests across 3 spec files |
+| CI | GitHub Actions |
+| Reporting | Playwright HTML/list reporter |
 
 ---
 
 ## Automated Test Files
 
-| Spec File                            | Purpose                                                                       |
-| ------------------------------------ | ----------------------------------------------------------------------------- |
-| `tests/saucedemo.spec.js`            | Core procedural Playwright tests for login, cart, checkout, and invalid login |
-| `tests/saucedemo-pom.spec.js`        | Core smoke flows organized using Page Object Model classes                    |
-| `tests/saucedemo-validation.spec.js` | Locked-out login and checkout required-field validation tests                 |
+| Spec File | Purpose |
+|---|---|
+| `tests/saucedemo.spec.js` | Core procedural Playwright tests for login, cart, checkout, and invalid login |
+| `tests/saucedemo-pom.spec.js` | Core smoke flows organized using Page Object Model classes |
+| `tests/saucedemo-validation.spec.js` | Locked-out login and checkout required-field validation tests |
 
 ---
 
 ## Repository Files
 
-| File / Folder                      | Purpose                                                                  |
-| ---------------------------------- | ------------------------------------------------------------------------ |
-| `README.md`                        | Main project overview                                                    |
-| `test-plan.md`                     | QA planning scope, risks, entry/exit criteria, and test approach         |
-| `manual-test-cases.md`             | Manual QA test cases, execution results, and automation coverage mapping |
-| `requirements-traceability.md`     | Requirement-to-test-to-defect traceability                               |
-| `bug-summary.md`                   | Summary of documented defects, severity, status, and related test cases  |
-| `accessibility-observations.md`    | Basic accessibility-awareness checklist                                  |
-| `api-testing-observations.md`      | Basic API-testing concept notes                                          |
-| `recruiter-quick-view.md`          | Fast summary for recruiters and hiring managers                          |
-| `tests/`                           | Playwright automated test files                                          |
-| `pages/`                           | Page Object Model classes                                                |
-| `playwright.config.js`             | Playwright configuration                                                 |
-| `.github/workflows/playwright.yml` | GitHub Actions CI workflow                                               |
+| File / Folder | Purpose |
+|---|---|
+| `README.md` | Main project overview |
+| `test-plan.md` | QA planning scope, risks, entry/exit criteria, and test approach |
+| `manual-test-cases.md` | Manual QA test cases, execution results, and automation coverage mapping |
+| `requirements-traceability.md` | Requirement-to-test-to-defect traceability |
+| `bug-summary.md` | Summary of documented defects, severity, status, and related test cases |
+| `accessibility-observations.md` | Basic accessibility-awareness checklist |
+| `api-testing-observations.md` | Basic API-testing concept notes |
+| `recruiter-quick-view.md` | Fast summary for recruiters and hiring managers |
+| `tests/` | Playwright automated test files |
+| `pages/` | Page Object Model classes |
+| `playwright.config.js` | Playwright configuration |
+| `.github/workflows/playwright.yml` | GitHub Actions CI workflow |
 
 ---
 
@@ -151,11 +151,11 @@ The CI workflow provides public evidence that the automated tests can be execute
 
 ## Documented Defects
 
-| Bug ID  |    Issue | Summary                                                           | Severity |
-| ------- | -------: | ----------------------------------------------------------------- | -------- |
-| BUG-001 | Issue #1 | Product images display incorrectly for `problem_user`             | Medium   |
-| BUG-002 | Issue #2 | Product prices display incorrectly for `visual_user`              | High     |
-| BUG-003 | Issue #3 | Checkout Last Name field does not accept input for `problem_user` | High     |
+| Bug ID | Issue | Summary | Severity |
+|---|---:|---|---|
+| BUG-001 | Issue #1 | Product images display incorrectly for `problem_user` | Medium |
+| BUG-002 | Issue #2 | Product prices display incorrectly for `visual_user` | High |
+| BUG-003 | Issue #3 | Checkout Last Name field does not accept input for `problem_user` | High |
 
 ---
 
@@ -163,14 +163,14 @@ The CI workflow provides public evidence that the automated tests can be execute
 
 This project is strongest for:
 
-* Manual QA Tester
-* QA Analyst
-* Functional Tester
-* UAT Tester
-* Software Tester
-* Junior QA Tester
-* Junior Hybrid QA Tester
-* QA Support Analyst
+- Manual QA Tester
+- QA Analyst
+- Functional Tester
+- UAT Tester
+- Software Tester
+- Junior QA Tester
+- Junior Hybrid QA Tester
+- QA Support Analyst
 
 It shows that I can document test cases, execute functional flows, report defects clearly, use GitHub Issues, understand basic traceability, create QA planning artifacts, and build beginner-level Playwright automation.
 
@@ -180,18 +180,18 @@ The strongest role fit is manual QA or junior hybrid QA. The automation is usefu
 
 ## Current Limitations
 
-* Automation coverage is beginner-level and focused on repeatable smoke/regression flows.
-* Manual coverage is broader than automation coverage.
-* API testing is documented conceptually only; this is not a full API automation project.
-* Accessibility notes are basic observations, not a formal WCAG audit.
-* The project uses a public demo application and does not control the application code.
+- Automation coverage is beginner-level and focused on repeatable smoke/regression flows.
+- Manual coverage is broader than automation coverage.
+- API testing is documented conceptually only; this is not a full API automation project.
+- Accessibility notes are basic observations, not a formal WCAG audit.
+- The project uses a public demo application and does not control the application code.
 
 ---
 
 ## Planned Improvements
 
-* Add more automated regression tests for cart removal, sorting, and additional negative checkout scenarios.
-* Expand defect evidence with screenshots or Playwright traces where useful.
-* Improve test data organization.
-* Continue separating manual test coverage from automation coverage clearly.
-* Add more structured notes explaining risk, severity, and business impact.
+- Add more automated regression tests for cart removal, sorting, and additional negative checkout scenarios.
+- Expand defect evidence with screenshots or Playwright traces where useful.
+- Improve test data organization.
+- Continue separating manual test coverage from automation coverage clearly.
+- Add more structured notes explaining risk, severity, and business impact.
