@@ -66,16 +66,15 @@ This project is not presented as paid QA employment, production QA ownership, or
 
 ## Automation Structure
 
-| Area                | Details                                                                |
-| ------------------- | ---------------------------------------------------------------------- |
-| Framework           | Playwright                                                             |
-| Language            | JavaScript                                                             |
-| Test Runner         | Playwright Test                                                        |
-| Structure           | Procedural tests + Page Object Model tests + validation/negative tests |
-| Test Count          | 12 Playwright tests across 3 spec files                                |
-| CI                  | GitHub Actions                                                         |
-| CI Browser Strategy | Uses the Chrome browser available on the GitHub-hosted runner          |
-| Reporting           | Playwright HTML/list reporter                                          |
+| Area        | Details                                                                |
+| ----------- | ---------------------------------------------------------------------- |
+| Framework   | Playwright                                                             |
+| Language    | JavaScript                                                             |
+| Test Runner | Playwright Test                                                        |
+| Structure   | Procedural tests + Page Object Model tests + validation/negative tests |
+| Test Count  | 12 Playwright tests across 3 spec files                                |
+| CI          | GitHub Actions                                                         |
+| Reporting   | Playwright HTML/list reporter                                          |
 
 ---
 
@@ -146,7 +145,7 @@ npm run report
 
 GitHub Actions runs the Playwright test suite on push, pull request, and manual workflow dispatch.
 
-The CI workflow is configured to use Chrome on the GitHub-hosted runner. This keeps the workflow simpler and avoids unnecessary browser-download time during CI execution.
+The CI workflow provides public evidence that the automated tests can be executed outside the local development environment.
 
 ---
 
