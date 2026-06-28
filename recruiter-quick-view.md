@@ -56,10 +56,10 @@ It is not presented as paid QA employment, production QA ownership, or professio
 | Area | Evidence |
 |---|---|
 | Framework | Playwright |
-| Language | TypeScript |
+| Language | JavaScript |
 | Structure | Page Object Model |
 | Coverage | Login, invalid login, cart behavior, checkout completion |
-| Local result | 6 tests passed |
+| Local result | 6 8 Playwright tests visible across two spec files |
 | CI result | GitHub Actions passed |
 | Public proof | GitHub repo + README badge |
 
