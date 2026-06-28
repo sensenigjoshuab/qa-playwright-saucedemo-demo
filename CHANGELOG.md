@@ -1,49 +1,34 @@
-name: Playwright Tests
+# Changelog
 
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
-  workflow_dispatch:
+## v1.2.1
 
-jobs:
-  test:
-    name: Run Playwright tests
-    timeout-minutes: 15
-    runs-on: ubuntu-latest
+### Improved
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+- Pinned Playwright dependency version for more reproducible installs.
+- Added CI artifact upload plan for Playwright HTML reports and test results.
+- Added GitHub issue template for consistent future bug reports.
+- Added smoke/regression script plan for grouped Playwright execution.
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: npm
+## v1.2.0
 
-      - name: Install dependencies
-        run: npm ci
+### Added
 
-      - name: Verify Chrome is available
-        run: google-chrome --version
+- Inventory regression tests for cart removal, product sorting, and product-detail navigation.
+- QA evidence index for recruiters, QA leads, technical reviewers, and hiring managers.
+- Automation strategy document explaining scope, selector strategy, CI approach, and limitations.
+- Expanded manual test coverage through TC-017.
+- Expanded requirements traceability through REQ-017.
 
-      - name: Run Playwright tests
-        run: npx playwright test
+### Fixed
 
-      - name: Upload Playwright HTML report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: playwright-report
-          path: playwright-report/
-          retention-days: 7
+- README formatting and JavaScript positioning.
+- Issue #3 title and defect body.
+- Product-detail test selector issue in `tests/saucedemo-inventory.spec.js`.
 
-      - name: Upload Playwright test results
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: playwright-test-results
-          path: test-results/
-          retention-days: 7
+## v1.1.0
+
+### Added
+
+- Page Object Model structure.
+- Checkout validation tests.
+- GitHub Actions workflow.
