@@ -1,0 +1,36 @@
+# Bug Summary — SauceDemo QA Portfolio
+
+## Purpose
+
+This document summarizes the defects identified during manual QA testing of the SauceDemo public demo application.
+
+The defects are documented as GitHub Issues and connected to the manual test cases and requirements traceability matrix.
+
+---
+
+## Defect Summary
+
+| Bug ID  | GitHub Issue | Title                                          | Account        | Related Test Case | Severity | Status |
+| ------- | -----------: | ---------------------------------------------- | -------------- | ----------------- | -------- | ------ |
+| BUG-001 |     Issue #1 | Product images display incorrectly             | `problem_user` | TC-007            | Medium   | Open   |
+| BUG-002 |     Issue #2 | Product prices display incorrectly             | `visual_user`  | TC-008            | High     | Open   |
+| BUG-003 |     Issue #3 | Checkout Last Name field does not accept input | `problem_user` | TC-009            | High     | Open   |
+
+---
+
+## Severity Definitions
+
+| Severity | Meaning                                                                                                                   |
+| -------- | ------------------------------------------------------------------------------------------------------------------------- |
+| High     | Blocks or seriously disrupts a core user flow, creates business risk, or could affect purchase decisions                  |
+| Medium   | Creates user confusion, reduces trust, or affects the quality of the user experience without fully blocking the core flow |
+| Low      | Minor visual, wording, or usability issue with limited user impact                                                        |
+
+---
+
+## QA Notes
+
+* BUG-001 affects product image accuracy for the `problem_user` account.
+* BUG-002 affects pricing accuracy for the `visual_user` account.
+* BUG-003 affects checkout form input behavior for the `problem_user` account.
+* The highest-risk defects are BUG-002 and BUG-003 because they affect pricing trust and checkout completion.
