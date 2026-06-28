@@ -6,9 +6,20 @@
 
 This repository is a self-directed QA portfolio project using the public SauceDemo demo application.
 
-It demonstrates manual QA fundamentals, functional test case design, bug reporting, requirements traceability, QA test planning, defect documentation, beginner Playwright automation, Page Object Model organization, and GitHub Actions CI.
+It demonstrates manual QA fundamentals, functional test case design, bug reporting, requirements traceability, QA test planning, defect documentation, beginner Playwright automation, Page Object Model organization, GitHub Actions CI, and clear separation between manual coverage, automated regression coverage, and documented defects.
 
 This project is not presented as paid QA employment, production QA ownership, or advanced automation framework ownership.
+
+---
+
+## Portfolio Positioning
+
+| Viewer Type | What This Repository Shows |
+|---|---|
+| Recruiter | Clear QA portfolio evidence, readable documentation, and role fit for entry-level QA roles |
+| QA Lead | Manual test design, expected vs. actual analysis, defect documentation, severity reasoning, and traceability |
+| Technical Reviewer | Playwright automation, JavaScript test files, Page Object Model structure, stable selectors, and CI execution |
+| Hiring Manager | Practical testing judgment, communication clarity, and honest scope control |
 
 ---
 
@@ -16,7 +27,7 @@ This project is not presented as paid QA employment, production QA ownership, or
 
 - Manual functional testing
 - Positive and negative test scenarios
-- Login, locked-out login, cart, checkout, validation, and order-completion testing
+- Login, locked-out login, cart, checkout, validation, inventory sorting, product-detail, and order-completion testing
 - Clear expected vs. actual result documentation
 - Bug reporting through GitHub Issues
 - Requirements traceability
@@ -27,6 +38,7 @@ This project is not presented as paid QA employment, production QA ownership, or
 - Playwright automation using JavaScript
 - Page Object Model structure
 - GitHub Actions CI test execution
+- Honest explanation of current limitations and future improvements
 
 ---
 
@@ -52,12 +64,16 @@ This project is not presented as paid QA employment, production QA ownership, or
 | Invalid login | Yes | Yes | Passing |
 | Locked-out login | Yes | Yes | Passing |
 | Add to cart | Yes | Yes | Passing |
+| Remove from cart | Yes | Yes | Passing |
 | Cart verification | Yes | Yes | Passing |
 | Checkout overview | Yes | Partial | Passing |
 | Checkout completion | Yes | Yes | Passing |
 | Checkout First Name validation | Yes | Yes | Passing |
 | Checkout Last Name validation | Yes | Yes | Passing |
 | Checkout Postal Code validation | Yes | Yes | Passing |
+| Inventory name sorting | Yes | Yes | Passing |
+| Inventory price sorting | Yes | Yes | Passing |
+| Product detail navigation | Yes | Yes | Passing |
 | Product image validation | Yes | No | Documented defect |
 | Product price validation | Yes | No | Documented defect |
 | `problem_user` checkout input defect | Yes | No | Documented defect |
@@ -71,10 +87,11 @@ This project is not presented as paid QA employment, production QA ownership, or
 | Framework | Playwright |
 | Language | JavaScript |
 | Test Runner | Playwright Test |
-| Structure | Procedural tests + Page Object Model tests + validation/negative tests |
-| Test Count | 12 Playwright tests across 3 spec files |
+| Structure | Procedural tests + Page Object Model tests + validation/negative tests + inventory regression tests |
+| Test Count | 16 Playwright tests across 4 spec files after the inventory regression file is added |
 | CI | GitHub Actions |
 | Reporting | Playwright HTML/list reporter |
+| Selector Strategy | Uses stable `data-test` selectors where practical |
 
 ---
 
@@ -85,6 +102,7 @@ This project is not presented as paid QA employment, production QA ownership, or
 | `tests/saucedemo.spec.js` | Core procedural Playwright tests for login, cart, checkout, and invalid login |
 | `tests/saucedemo-pom.spec.js` | Core smoke flows organized using Page Object Model classes |
 | `tests/saucedemo-validation.spec.js` | Locked-out login and checkout required-field validation tests |
+| `tests/saucedemo-inventory.spec.js` | Inventory regression tests for cart removal, sorting, and product-detail navigation |
 
 ---
 
@@ -93,6 +111,8 @@ This project is not presented as paid QA employment, production QA ownership, or
 | File / Folder | Purpose |
 |---|---|
 | `README.md` | Main project overview |
+| `qa-evidence-index.md` | Fast map of portfolio evidence by viewer type |
+| `automation-strategy.md` | Automation scope, selector strategy, CI notes, and limitations |
 | `test-plan.md` | QA planning scope, risks, entry/exit criteria, and test approach |
 | `manual-test-cases.md` | Manual QA test cases, execution results, and automation coverage mapping |
 | `requirements-traceability.md` | Requirement-to-test-to-defect traceability |
@@ -104,6 +124,7 @@ This project is not presented as paid QA employment, production QA ownership, or
 | `pages/` | Page Object Model classes |
 | `playwright.config.js` | Playwright configuration |
 | `.github/workflows/playwright.yml` | GitHub Actions CI workflow |
+| `.gitignore` | Keeps local dependencies and generated test artifacts out of the repository |
 
 ---
 
@@ -180,18 +201,19 @@ The strongest role fit is manual QA or junior hybrid QA. The automation is usefu
 
 ## Current Limitations
 
-- Automation coverage is beginner-level and focused on repeatable smoke/regression flows.
+- Automation coverage is beginner-to-junior level and focused on repeatable smoke/regression flows.
 - Manual coverage is broader than automation coverage.
 - API testing is documented conceptually only; this is not a full API automation project.
 - Accessibility notes are basic observations, not a formal WCAG audit.
 - The project uses a public demo application and does not control the application code.
+- The documented defects remain open because this portfolio cannot change SauceDemo source code.
 
 ---
 
 ## Planned Improvements
 
-- Add more automated regression tests for cart removal, sorting, and additional negative checkout scenarios.
-- Expand defect evidence with screenshots or Playwright traces where useful.
-- Improve test data organization.
+- Add screenshots or Playwright traces to documented defects where useful.
+- Expand cross-browser coverage after the smoke suite is stable.
+- Add API practice using a public API designed for testing.
 - Continue separating manual test coverage from automation coverage clearly.
 - Add more structured notes explaining risk, severity, and business impact.
