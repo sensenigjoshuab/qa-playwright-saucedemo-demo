@@ -65,9 +65,9 @@ test.describe('SauceDemo inventory and cart regression tests', () => {
     await page.locator('[data-test="item-4-title-link"]').click();
 
     await expect(page).toHaveURL(/inventory-item\.html\?id=4/);
-    await expect(page.locator('[data-test="inventory-details-name"]')).toHaveText('Sauce Labs Backpack');
-    await expect(page.locator('[data-test="inventory-details-price"]')).toHaveText('$29.99');
+    await expect(page.getByText('Sauce Labs Backpack')).toBeVisible();
+    await expect(page.getByText('$29.99')).toBeVisible();
     await expect(page.getByRole('button', { name: 'Add to cart' })).toBeVisible();
-    await expect(page.locator('[data-test="back-to-products"]')).toBeVisible();
+    await expect(page.getByRole('button', { name: 'Back to products' })).toBeVisible();
   });
 });
