@@ -22,5 +22,5 @@ The screenshots are stored directly in issue comments so reviewers can see the d
 
 - [`manual-test-cases.md`](../manual-test-cases.md)
 - [`bug-summary.md`](../bug-summary.md)
-- [`requirements-traceability-matrix.md`](../requirements-traceability-matrix.md)
+- [`requirements-traceability.md`](../requirements-traceability.md)
 - [`qa-evidence-index.md`](../qa-evidence-index.md)
