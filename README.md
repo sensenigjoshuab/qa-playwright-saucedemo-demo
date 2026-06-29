@@ -112,6 +112,7 @@ This project is not presented as paid QA employment, production QA ownership, or
 |---|---|
 | `README.md` | Main project overview |
 | `qa-evidence-index.md` | Fast map of portfolio evidence by viewer type |
+| `docs/screenshots.md` | Screenshot evidence index linking documented defects to GitHub Issue evidence |
 | `automation-strategy.md` | Automation scope, selector strategy, CI notes, and limitations |
 | `test-plan.md` | QA planning scope, risks, entry/exit criteria, and test approach |
 | `manual-test-cases.md` | Manual QA test cases, execution results, and automation coverage mapping |
@@ -134,86 +135,3 @@ Install dependencies:
 
 ```bash
 npm install
-```
-
-Install Playwright browsers for local testing:
-
-```bash
-npx playwright install
-```
-
-Run all tests:
-
-```bash
-npm test
-```
-
-Run tests in headed mode:
-
-```bash
-npm run test:headed
-```
-
-Open the Playwright report:
-
-```bash
-npm run report
-```
-
----
-
-## CI Notes
-
-GitHub Actions runs the Playwright test suite on push, pull request, and manual workflow dispatch.
-
-The CI workflow provides public evidence that the automated tests can be executed outside the local development environment.
-
----
-
-## Documented Defects
-
-| Bug ID | Issue | Summary | Severity |
-|---|---:|---|---|
-| BUG-001 | Issue #1 | Product images display incorrectly for `problem_user` | Medium |
-| BUG-002 | Issue #2 | Product prices display incorrectly for `visual_user` | High |
-| BUG-003 | Issue #3 | Checkout Last Name field does not accept input for `problem_user` | High |
-
----
-
-## Best-Fit Role Signal
-
-This project is strongest for:
-
-- Manual QA Tester
-- QA Analyst
-- Functional Tester
-- UAT Tester
-- Software Tester
-- Junior QA Tester
-- Junior Hybrid QA Tester
-- QA Support Analyst
-
-It shows that I can document test cases, execute functional flows, report defects clearly, use GitHub Issues, understand basic traceability, create QA planning artifacts, and build beginner-level Playwright automation.
-
-The strongest role fit is manual QA or junior hybrid QA. The automation is useful supporting evidence, but this project should not be presented as advanced SDET-level framework ownership.
-
----
-
-## Current Limitations
-
-- Automation coverage is beginner-to-junior level and focused on repeatable smoke/regression flows.
-- Manual coverage is broader than automation coverage.
-- API testing is documented conceptually only; this is not a full API automation project.
-- Accessibility notes are basic observations, not a formal WCAG audit.
-- The project uses a public demo application and does not control the application code.
-- The documented defects remain open because this portfolio cannot change SauceDemo source code.
-
----
-
-## Planned Improvements
-
-- Add screenshots or Playwright traces to documented defects where useful.
-- Expand cross-browser coverage after the smoke suite is stable.
-- Add API practice using a public API designed for testing.
-- Continue separating manual test coverage from automation coverage clearly.
-- Add more structured notes explaining risk, severity, and business impact.
