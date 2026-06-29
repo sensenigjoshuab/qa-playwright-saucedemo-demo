@@ -1,6 +1,6 @@
 {
   "name": "qa-playwright-saucedemo-demo",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "QA portfolio project for SauceDemo covering manual functional testing, defect documentation, traceability, and Playwright automation with JavaScript.",
   "scripts": {
     "test": "playwright test",
@@ -10,6 +10,6 @@
     "report": "playwright show-report"
   },
   "devDependencies": {
-    "@playwright/test": "latest"
+    "@playwright/test": "1.61.1"
   }
 }
